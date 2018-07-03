@@ -52,6 +52,7 @@ print (response.text)
 """
 
 #POST add new card
+'''
 boards_url = base + 'members/me/boards'
 board_list = requests.get(boards_url, params=param_butuh)
 board_list_array = board_list.json()
@@ -80,4 +81,33 @@ card_url = base + '/cards'
 card_desc = input("Description to the card? ")
 param_butuh.update({'name': card_name, 'desc': card_desc, 'idList':list_id})
 response = requests.request("POST", card_url, params=param_butuh)
+print(response.text)
+'''
+
+#DELETE delete existing card
+boards_url = base + 'members/me/boards'
+board_list = requests.get(boards_url, params=param_butuh)
+board_list_array = board_list.json()
+
+for board in board_list_array:
+    print (board['name'])
+
+board_name = input("Name of a board to add the card? ")
+for board in board_list_array:
+    board_id = board['id']
+
+card_url = base + 'boards/' + board_id + '/cards'
+card_list = requests.request("GET", card_url, params=param_butuh)
+card_list_array = card_list.json()
+
+for card in card_list_array:
+    print (card['name'])
+
+card_name = input("Name of the card you wished to delete? ")
+for card in card_list_array:
+    if card['name'] == card_name:
+        card_id = card['id']
+        
+card_url = base + '/cards/' + card_id
+response = requests.request("DELETE", card_url, params=param_butuh)
 print(response.text)
