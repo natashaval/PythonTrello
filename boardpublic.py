@@ -19,7 +19,6 @@ board_array = response.json()
 
 
 # 2. List yang ada dalam board tertentu
-#if board['name'] == 'Welcome Board':
 list_url = base + 'boards/' + board_id + '/lists'
 list_list = requests.get(list_url, params=params_key_and_token)
 list_list_array = list_list.json()
@@ -33,7 +32,7 @@ for lists in list_list_array:
         params_key_and_token.update({'fields': 'id,name,labels'})
         card_list = requests.get(card_url, params=params_key_and_token)
         card_list_array = card_list.json()
-        print (card_list_array)
+        #print (card_list_array)
         print ('\t\tJumlah card dalam list : ' + str(len(card_list_array)))
         
         for cards in card_list_array:
