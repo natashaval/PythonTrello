@@ -23,7 +23,15 @@ board_array = response.json()
 #print (board_array)
 for action in board_array:
     print ('\n' + action['type'] + ' ' + action['date'])
-    print (action['memberCreator']['username'] + ' ' + action['member']['fullName'])
+    print (action['memberCreator']['username'] + ' ' + action['memberCreator']['fullName'])
     if 'member' in action:
         print ('another member: ' + action['member']['username'] + ' ' + action['member']['fullName'])
         
+filter_choice = input('Do you want to filter action/log based on name? (Y/N) ')
+if filter_choice == 'Y' or filter_choice == 'y':
+    filter_name = input('What is the username / FullName? ')
+    for action in board_array:
+        if (action['memberCreator']['username'] == filter_name) or (action['memberCreator']['fullName'] == filter_name):
+            print ('\n' + action['type'] + ' ' + action['date'])
+        if ('member' in action) and (action['member']['fullName'] == filter_name or action['member']['username'] == filter_name):
+            print ('-- ' + action['type'] + ' ' + action['date'])
