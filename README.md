@@ -18,4 +18,9 @@ menghitung persentase setiap checklist
 - Jika ya, akan menampilkan seluruh cards, jika tidak akan menampilkan salah satu cards dalam nama list yang 
 telah dimasukkan
 - Akan muncul cards beserta checklist yang ada dan persentase setiap checklistnya 
+
+==========
+boardaction.py -> menunjukkan aktivitas log pada salah satu board dan melakukan filter yang telah dilakukan oleh 
+member
+boardpublic.py -> menunjukkan hasil boards, lists, cards serta dapat melakukan filter berdasarkan label
 # PythonTrello
