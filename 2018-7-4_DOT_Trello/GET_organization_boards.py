@@ -8,7 +8,7 @@ params_key_and_token = {'key':key, 'token':token}
 
 base = 'https://api.trello.com/1/'
 # JANGAN LUPA ganti jadi 'ptdotindonesia1'
-organization_name = 'pythonuser'
+organization_name = 'ptdotindonesia1'
 
 def Merge(dict1, dict2):
     res = {**dict1, **dict2}
@@ -54,6 +54,7 @@ def funcShowCard(list_id_param, list_name_param):
     params_key_and_token.update({'fields': 'id,name,desc,pos'})
     card_list = requests.get(card_url, params=params_key_and_token)
     card_list_array = card_list.json()
+#    total_persentaselist = 0
     print ('\t - ' + list_name_param)
     print ('\t\tJumlah card dalam list : ' + str(len(card_list_array)))
     
@@ -69,6 +70,7 @@ def funcShowCard(list_id_param, list_name_param):
 
         if len(check_list_array) > 0:
             print ('\t\t\tJumlah checklist setiap card : ' + str(len(check_list_array)))
+#        total_persentasecard = 0
 
         for checklist in check_list_array:
             belum = 0
@@ -83,7 +85,18 @@ def funcShowCard(list_id_param, list_name_param):
             print ('\t\t\tSelesai: ' + str(selesai) + ' Belum: ' + str(belum))
             if (selesai > 0) or (belum > 0):
                 persentaseselesai = selesai / (selesai+belum) * 100
-                print ('\t\t\tPersentase selesai: ' + str(persentaseselesai) + '%')
+#                total_persentasecard += persentaseselesai
+                print ('\t\t\t===Persentase selesai: ' + str(persentaseselesai) + '%')
+
+#        if len(check_list_array) > 0:
+#            persentasecard = total_persentasecard / len(check_list_array)
+#            print ('\t\t=====Persentase selesai setiap card: ' + repr(persentasecard))
+#            total_persentaselist += persentasecard
+
+#    if len(card_list_array) > 0: 
+#        persentaselist = total_persentaselist / len(card_list_array)
+#        print ('\t\t=====Persentase selesai setiap list: ' + repr(persentaselist))
+        
 
 # 3. Cards yang ada pada list tertentu
 if (lists_choice == 'y') or (lists_choice == 'Y'):
