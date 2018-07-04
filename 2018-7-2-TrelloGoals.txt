@@ -1,0 +1,12 @@
+baik, pastikan kamu bisa dapat : 
+
+1. Boards dari Trello
+
+2. Lists yang ada di board tertentu
+
+3. Cards yang ada di list tertentu
+
+4. Checklist items yang ada di card tertentu
+
+@magang_natasha
+^ pake python app ya
