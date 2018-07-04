@@ -10,3 +10,7 @@ baik, pastikan kamu bisa dapat :
 
 @magang_natasha
 ^ pake python app ya
+
+2018-7-4
+1. Update Readme.md jelaskan install apa aja (key, token) dsb
+2. Update agar bisa akses Trello berdasarkan organisasi
