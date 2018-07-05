@@ -1,4 +1,22 @@
 1. Belajar query MongoDB
+
 2. Bagaimana cara update data yang di GET di Trello kemudian di "Update" di MongoDB tanpa meng-override yang 
 sebelumnya sudah ada, jika sudah ada diskip
+
 3. Belajar index pada MongoDB (untuk mempercepat query?). Bagaimana cara mengatur pemanggilan index yang benar
+
+source:
+https://scotch.io/tutorials/getting-started-with-python-and-mongodb
+http://api.mongodb.com/python/current/tutorial.html
+
+course : 17 Jul 2018 
+https://university.mongodb.com/courses/M001/about?_ga=2.193202414.252983121.1530674783-1165282907.1530674783
+
+Tutorial install:
+1. Install MongoDB from https://www.mongodb.com/download-center#community
+2. If on Windows, follow tutorial https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+3. Start MongoDB database
+"C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --dbpath="[[ path to database directory ]]"
+C:\Program Files\... -> default MongoDB path
+3. Connect to MongoDB
+"C:\Program Files\MongoDB\Server\4.0\bin\mongo.exe"
