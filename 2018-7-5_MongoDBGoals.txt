@@ -1,0 +1,4 @@
+1. Belajar query MongoDB
+2. Bagaimana cara update data yang di GET di Trello kemudian di "Update" di MongoDB tanpa meng-override yang 
+sebelumnya sudah ada, jika sudah ada diskip
+3. Belajar index pada MongoDB (untuk mempercepat query?). Bagaimana cara mengatur pemanggilan index yang benar
