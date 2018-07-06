@@ -1,0 +1,21 @@
+Goals dari Board Magang DOT Card Talent Pool Dashboard:
+
+Deadline Senin, 16 Juli 2018
+
+  1. Ambil data dari board [DOT HRD](trello.com/b/PIBvM5Q9/dot-hrd), tampilkan dalam bentuk tabel
+
+    a. Horizontal (kolom) = list pada Trello ex Apply, CV in review, dsb
+
+    b. Vertikal (baris) = Posisi ... kemudian (Junior / Intermediate / Senior)
+
+    c. Akhir baris = total kandidat tiap posisi (misalnya Front End Dev Junior berapa)
+
+    d. Akhir kolom = total kandidat tiap stage (misalnya yang apply berapa)
+
+
+
+  2. Model data untuk Application Submission dari Activity (dari Add Card, Move Card) berdasarkan waktunya
+    a. Horizontal = waktu (tanggal/bulan/tahun)
+    b. Vertical = jumlah
+  3. Tampilkan nomor 1 dalam bentuk html tabel (ke php kemudian di html ??)
+  4. Tampilkan dalam bentuk line chart (atau yang dot graph)
