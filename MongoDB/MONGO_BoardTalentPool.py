@@ -8,7 +8,6 @@ API are useful:
 '''
 
 import pprint
-
 from pymongo import MongoClient
 client = MongoClient()
 
@@ -35,10 +34,12 @@ params_key_and_token.update({'cards': 'all', 'labels': 'all', 'lists': 'all', 'a
 response = requests.request("GET", board_url, params=params_key_and_token)
 board_array = response.json()
 
+list_dict = {}
 # set karena list dan card dapat berubah-ubah
 for lists in board_array['lists']:
     lists['_id'] = lists.pop('id')
     lists['type'] = 'List'
+    list_dict.update({lists['_id']:lists['name']})
     lists_save = coll.update({'_id': lists['_id']}, {'$set': lists}, upsert=True)
 
 for cards in board_array['cards']:
@@ -57,3 +58,4 @@ for labels in board_array['labels']:
     labels['_id'] = labels.pop('id')
     labels['type'] = 'Label'
     labels_save = coll.update({'_id': labels['_id']}, {'$set': labels}, upsert=True)            
+
