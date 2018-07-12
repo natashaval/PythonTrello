@@ -4,7 +4,7 @@ from pymongo import MongoClient
 client = MongoClient()
 
 db = client['Trello']
-coll = db['DOT-HRD']
+coll = db['DOT-TalentPool']
 
 import requests
 import json
@@ -42,9 +42,11 @@ for lists in list_list_array:
 
 # 3. Cards yang ada pada list tertentu
         card_url = base + 'lists/' + lists['_id'] + '/cards'
-        #params_key_and_token.update({'fields': 'id,dateLastActivity,desc,descData,due,dueComplete,name,labels'})
+        params_key_and_token.update({'fields': 'id,checkItemStates,closed,dateLastActivity,desc,due,dueComplete,labels,name'})
         card_list = requests.get(card_url, params=params_key_and_token)
         card_list_array = card_list.json()
+        if params_key_and_token['fields']:
+          del params_key_and_token['fields']
         #print (card_list_array)
         print ('\t\tJumlah card dalam list : ' + str(len(card_list_array)))
         
@@ -54,7 +56,7 @@ for lists in list_list_array:
             cards['type'] = 'Card'
             cards_save = coll.update({'_id': cards['_id']}, {'$set': cards}, upsert=True)            
 
-
+'''
 filter_choice = input('Do you want to filter card by label? (Y/N) ')
 if filter_choice == 'Y' or filter_choice == 'y':
     board_filter_label = board_array['labelNames']
@@ -66,8 +68,6 @@ if filter_choice == 'Y' or filter_choice == 'y':
     filter_name = input("Which label do you want to filter? ")
     total_filter_name = 0
     card_url = base + 'boards/' + board_id + '/cards'
-    #if params_key_and_token['fields']:
-    #    del params_key_and_token['fields']
     card_list = requests.get(card_url, params=params_key_and_token)
     card_list_array = card_list.json()
     
@@ -76,4 +76,4 @@ if filter_choice == 'Y' or filter_choice == 'y':
             print (cards['name'])
             total_filter_name += 1
     print (total_filter_name)
-        
+'''        
