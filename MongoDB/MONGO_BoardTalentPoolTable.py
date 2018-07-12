@@ -19,17 +19,18 @@ for lists in coll.find({'type': 'List'}):
     
 #for card in islice(coll.find({"$and": [{'type': 'Card'},{'labels': {"$ne": None}}]}) , 2):
 #    pprint.pprint(card)
-    
-for label in coll.find({'type': 'Label'}):
-    if (label['name']=='junior level') or (label['name']=='intermediate level'):
-        print('INI JUNIOR / INTERMEDIATE SKIP')
-        continue
-        #trello_table[label['idList']].update
-        #ans = coll.find({"$and": [{'type': 'Card'}, {'labels': label}]}).count()
-    ans = coll.find({"$and": [{'type': 'Card'}, {'labels.name': {"$all": [label['name'], "junior level"]} }]}).count()
-    print (label['name'], 'junior level', ans)
-    ans = coll.find({"$and": [{'type': 'Card'}, {'labels.name': {"$all": [label['name'], "intermediate level"]} }]}).count()
-    print (label['name'], 'intermediate level', ans)
+for lists in coll.find({'type': 'List'}):    
+    for label in coll.find({'type': 'Label'}):
+        if (label['name']=='junior level') or (label['name']=='intermediate level'):
+            continue
+            #trello_table[label['idList']].update
+            #ans = coll.find({"$and": [{'type': 'Card'}, {'labels': label}]}).count()
+        ans = coll.find({"$and": [{'type': 'Card'}, {'idList': lists['_id']}, {'labels.name': {"$all": [label['name'], "junior level"]} }]}).count()
+        if ans > 0:
+          print (lists['name'], label['name'], 'junior level', ans)
+        ans = coll.find({"$and": [{'type': 'Card'}, {'idList': lists['_id']}, {'labels.name': {"$all": [label['name'], "intermediate level"]} }]}).count()
+        if ans > 0:
+          print (lists['name'], label['name'], 'intermediate level', ans)
     
 
 # search job and list (junior / intermediate)
