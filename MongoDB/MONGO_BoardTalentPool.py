@@ -8,13 +8,13 @@ API are useful:
 '''
 
 import pprint
-'''
+
 from pymongo import MongoClient
 client = MongoClient()
 
 db = client['Trello']
 coll = db['Board-Coba']
-'''
+
 import requests
 import json
 import sys
@@ -35,5 +35,25 @@ params_key_and_token.update({'cards': 'all', 'labels': 'all', 'lists': 'all', 'a
 response = requests.request("GET", board_url, params=params_key_and_token)
 board_array = response.json()
 
-pprint.pprint(board_array['lists'])
+# set karena list dan card dapat berubah-ubah
+for lists in board_array['lists']:
+    lists['_id'] = lists.pop('id')
+    lists['type'] = 'List'
+    lists_save = coll.update({'_id': lists['_id']}, {'$set': lists}, upsert=True)
 
+for cards in board_array['cards']:
+    cards['_id'] = cards.pop('id')
+    cards['type'] = 'Card'
+    cards_save = coll.update({'_id': cards['_id']}, {'$set': cards}, upsert=True)            
+
+# setOnInsert karena tidak akan berubah untuk action log,
+# jika belum berubah maka akan diinsert, jika sudah ada dibiarkan
+for actions in board_array['actions']:
+    actions['_id'] = actions.pop('id')
+    actions['type']= 'Action'
+    actions_save = coll.update({'_id': actions['_id']}, {'$setOnInsert': actions}, upsert=True)
+    
+for labels in board_array['labels']:
+    labels['_id'] = labels.pop('id')
+    labels['type'] = 'Label'
+    labels_save = coll.update({'_id': labels['_id']}, {'$set': labels}, upsert=True)            
