@@ -30,7 +30,8 @@ print ('Search for board id by `id`')
 board_id = input("Insert board id here: ")
 board_url = base + 'boards/' + board_id
 
-params_key_and_token.update({'cards': 'all', 'labels': 'all', 'lists': 'all', 'actions': 'all'})
+params_key_and_token.update({'cards': 'all', 'customFields': 'true', 'card_customFieldItems': 'true',
+                             'labels': 'all', 'lists': 'all', 'actions': 'all'})
 response = requests.request("GET", board_url, params=params_key_and_token)
 board_array = response.json()
 
@@ -59,3 +60,10 @@ for labels in board_array['labels']:
     labels['type'] = 'Label'
     labels_save = coll.update({'_id': labels['_id']}, {'$set': labels}, upsert=True)            
 
+for fields in board_array['customFields']:
+    fields['_id'] = fields.pop('id')
+    fields['fieldType'] = fields.pop('type') # custom fields type = number, text, dropdown
+    fields['type'] = 'customField'
+    fields_save = coll.update({'_id': fields['_id']}, {'$set': fields}, upsert=True)            
+
+client.close()
