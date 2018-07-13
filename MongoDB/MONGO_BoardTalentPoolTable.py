@@ -41,7 +41,7 @@ for label in coll.find({'type': 'Label'}):
     #        continue
     html_table = html_table + "<tr><td>" + label['name'] + "</td><td>Junior</td>"
     for lists in coll.find({'type': 'List'}):
-        ans = coll.find({"$and": [{'type': 'Card'}, {'idList': lists['_id']}, {'labels.name': {"$all": [label['name'], "junior level"]} }]}).count()
+        ans = coll.find({"$and": [{'type': 'Card'}, {'closed': False}, {'idList': lists['_id']}, {'labels.name': {"$all": [label['name'], "junior level"]} }]}).count()
         #total_vertical = total_vertical + ans
         
         if ans > 0:
@@ -53,13 +53,13 @@ for label in coll.find({'type': 'Label'}):
             html_table = html_table + html_card
 
     # total sum per job per junior level
-    total_level = coll.find({"$and": [{'type': 'Card'}, {'labels.name': {"$all": [label['name'], "junior level"]} }]}).count()
+    total_level = coll.find({"$and": [{'type': 'Card'}, {'closed': False}, {'labels.name': {"$all": [label['name'], "junior level"]} }]}).count()
     html_table = html_table + "<td><h3>" + str(total_level) + "</h3></td></tr>"
     
     # Intermediate Level
     html_table = html_table + "<tr><td>" + label['name'] + "</td><td>Intermediate</td>"
     for lists in coll.find({'type': 'List'}):
-        ans = coll.find({"$and": [{'type': 'Card'}, {'idList': lists['_id']}, {'labels.name': {"$all": [label['name'], "intermediate level"]} }]}).count()
+        ans = coll.find({"$and": [{'type': 'Card'}, {'closed': False}, {'idList': lists['_id']}, {'labels.name': {"$all": [label['name'], "intermediate level"]} }]}).count()
         #total_vertical = total_vertical + ans
         
         if ans > 0:
@@ -71,7 +71,7 @@ for label in coll.find({'type': 'Label'}):
             html_table = html_table + html_card
 
     # total sum per job per intermediate level        
-    total_level = coll.find({"$and": [{'type': 'Card'}, {'labels.name': {"$all": [label['name'], "intermediate level"]} }]}).count()
+    total_level = coll.find({"$and": [{'type': 'Card'}, {'closed': False}, {'labels.name': {"$all": [label['name'], "intermediate level"]} }]}).count()
     html_table = html_table + "<td><h3>" + str(total_level) + "</h3></td></tr>"
 
 # total sum per list
