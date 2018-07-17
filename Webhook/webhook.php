@@ -18,14 +18,22 @@ else if (!empty($events)){
 	file_put_contents($filename, $counter);
 	echo "COUNTER saat ini: $counter";
 
-	if ($counter == 49){
+	if ($counter >= 49){
 		$output = shell_exec("python script/MONGO_BoardTalentPool.py");
 		var_dump($output);
+		//set counter to 0 again
+		$counter = 0;
+		file_put_contents($filename, $counter);
 	}
 }
 else {
 	$counter = file_get_contents($filename);
 	echo "ini hasil dari file: $counter";
+	if ($counter >= 49){
+		//set counter to 0 again
+		$counter = 0;
+		file_put_contents($filename, $counter);
+	}
 }
 
 

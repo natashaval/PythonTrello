@@ -52,6 +52,7 @@ for cards in board_array['cards']:
 # jika belum berubah maka akan diinsert, jika sudah ada dibiarkan
 for actions in board_array['actions']:
     actions['_id'] = actions.pop('id')
+    actions['actionType'] = actions.pop('type')
     actions['type']= 'Action'
     actions_save = coll.update({'_id': actions['_id']}, {'$setOnInsert': actions}, upsert=True)
     
