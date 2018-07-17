@@ -28,6 +28,7 @@ print ('Open your board in browser. Next, add `.json` at the end of the link')
 print ('Search for board id by `id`')
 
 board_id = input("Insert board id here: ")
+#board_id = '5a5c4f8f846918a84a3a4f85' #for DOT Talent Pool
 board_url = base + 'boards/' + board_id
 
 params_key_and_token.update({'cards': 'all', 'customFields': 'true', 'card_customFieldItems': 'true',

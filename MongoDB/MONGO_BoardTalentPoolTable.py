@@ -68,6 +68,24 @@ for label in coll.find({'type': 'Label'}):
         # total sum per job per junior level
         total_level = coll.find({"$and": [{'type': 'Card'}, {'closed': False}, {'labels.name': {"$all": [label['name'], level]} }]}).count()
         html_table = html_table + "<td><h3>" + str(total_level) + "</h3></td></tr>"
+
+    # Add Else not Junior/Intermediate but still in the level
+    html_table = html_table + "<tr><td>" + label['name'] + "</td><td>" + 'NO LEVEL' +"</td>"
+    for lists in coll.find({'type': 'List'}):
+        ans = coll.find({"$and": [{'type': 'Card'}, {'closed': False}, {'idList': lists['_id']}, {'labels.name': {"$eq": label['name'], "$nin":level_list } }]}).count()
+
+        if ans > 0:
+            html_card = "<td><b>"+str(ans)+"</b></td>"
+            html_table = html_table + html_card
+            #print (lists['name'], label['name'], 'junior level', ans)
+        else:
+            html_card = "<td>"+str(ans)+"</td>"
+            html_table = html_table + html_card
+
+    total_level = coll.find({"$and": [{'type': 'Card'}, {'closed': False}, {'labels.name': {"$eq": label['name'], "$nin":level_list } }]}).count()
+    html_table = html_table + "<td><h3>" + str(total_level) + "</h3></td></tr>"
+
+
     '''    
     # Intermediate Level
     html_table = html_table + "<tr><td>" + label['name'] + "</td><td>Intermediate</td>"
