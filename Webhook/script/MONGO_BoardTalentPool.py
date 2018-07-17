@@ -24,8 +24,7 @@ token = '6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9'
 params_key_and_token = {'key':key, 'token':token}
 base = 'https://api.trello.com/1/'
 
-print ('Open your board in browser. Next, add `.json` at the end of the link')
-print ('Search for board id by `id`')
+print ('Insert all data in DOT Talent Pool in MongoDB')
 
 #board_id = input("Insert board id here: ")
 board_id = '5a5c4f8f846918a84a3a4f85'
