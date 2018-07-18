@@ -21,6 +21,7 @@ else if (!empty($events)){
 	if ($counter >= 49){
 		$output = shell_exec("python script/MONGO_BoardTalentPool.py");
 		var_dump($output);
+		$output1 = shell_exec("python script/MONGO_BoardTalentPoolTable.py");
 		//set counter to 0 again
 		$counter = 0;
 		file_put_contents($filename, $counter);
