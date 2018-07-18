@@ -63,7 +63,8 @@ for label in coll.find({'type': 'Label'}):
                     html_table = html_table + html_card
                     #print (lists['name'], label['name'], 'junior level', ans)
                 else:
-                    html_card = "<td>"+str(ans)+"</td>"
+                    #html_card = "<td>"+str(ans)+"</td>"
+                    html_card = "<td></td>"
                     html_table = html_table + html_card
 
             # total sum per job per junior level
@@ -73,7 +74,7 @@ for label in coll.find({'type': 'Label'}):
         # Add Job and Level (without Location)
         html_table = html_table + "<tr><td>" + label['name'] + "</td><td>" + level + "</td><td>" + 'NO LOCATION' + "</td>"
         for lists in coll.find({'type': 'List'}):
-            ans = coll.find({"$and": [{'type': 'Card'}, {'closed': False}, {'idList': lists['_id']}, {'labels.name': {"$all": [label['name'], level]} }]}).count()
+            ans = coll.find({"$and": [{'type': 'Card'}, {'closed': False}, {'idList': lists['_id']}, {'labels.name': {"$all": [label['name'], level], "$nin": location_list } }]}).count()
             #total_vertical = total_vertical + ans
             
             if ans > 0:
@@ -81,10 +82,11 @@ for label in coll.find({'type': 'Label'}):
                 html_table = html_table + html_card
                 #print (lists['name'], label['name'], 'junior level', ans)
             else:
-                html_card = "<td>"+str(ans)+"</td>"
+                #html_card = "<td>"+str(ans)+"</td>"
+                html_card = "<td></td>"
                 html_table = html_table + html_card
 
-        total_level = coll.find({"$and": [{'type': 'Card'}, {'closed': False}, {'labels.name': {"$all": [label['name'], level]} }]}).count()
+        total_level = coll.find({"$and": [{'type': 'Card'}, {'closed': False}, {'labels.name': {"$all": [label['name'], level], "$nin": location_list } }]}).count()
         html_table = html_table + "<td><h3>" + str(total_level) + "</h3></td></tr>"
 
 
@@ -92,17 +94,18 @@ for label in coll.find({'type': 'Label'}):
     for location in location_list:    
         html_table = html_table + "<tr><td>" + label['name'] + "</td><td>" + 'NO LEVEL' +"</td><td>" + location + "</td>"
         for lists in coll.find({'type': 'List'}):
-            ans = coll.find({"$and": [{'type': 'Card'}, {'closed': False}, {'idList': lists['_id']}, {'labels.name': {"$eq": label['name'], "$eq":location, "$nin":level_list } }]}).count()
+            ans = coll.find({"$and": [{'type': 'Card'}, {'closed': False}, {'idList': lists['_id']}, {'labels.name': {"$all": [label['name'],location], "$nin":level_list } }]}).count()
 
             if ans > 0:
                 html_card = "<td><b>"+str(ans)+"</b></td>"
                 html_table = html_table + html_card
                 #print (lists['name'], label['name'], 'junior level', ans)
             else:
-                html_card = "<td>"+str(ans)+"</td>"
+                #html_card = "<td>"+str(ans)+"</td>"
+                html_card = "<td></td>"
                 html_table = html_table + html_card
 
-        total_level = coll.find({"$and": [{'type': 'Card'}, {'closed': False}, {'labels.name': {"$eq": label['name'], "$eq":location, "$nin":level_list } }]}).count()
+        total_level = coll.find({"$and": [{'type': 'Card'}, {'closed': False}, {'labels.name': {"$all": [label['name'], location], "$nin":level_list } }]}).count()
         html_table = html_table + "<td><h3>" + str(total_level) + "</h3></td></tr>"
 
     # Add NO LEVEL, NO LOCATION
@@ -115,7 +118,8 @@ for label in coll.find({'type': 'Label'}):
             html_table = html_table + html_card
             #print (lists['name'], label['name'], 'junior level', ans)
         else:
-            html_card = "<td>"+str(ans)+"</td>"
+            #html_card = "<td>"+str(ans)+"</td>"
+            html_card = "<td></td>"
             html_table = html_table + html_card
 
     total_level = coll.find({"$and": [{'type': 'Card'}, {'closed': False}, {'labels.name': {"$eq": label['name'], "$nin":level_list } }]}).count()
