@@ -5,7 +5,7 @@ membuat list dari boards yang ada dalam organisasi
 import subprocess
 import pprint
 
-# lakukan curl
+# lakukan curl get board
 org_board = subprocess.getstatusoutput('curl --request GET --url "https://api.trello.com/1/organizations/ptdotindonesia1/boards?filter=all&fields=id%2Cname&key=19e1e8779951830e0d86122f201454c6&token=6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9"')
 
 # simpan tuple sebagai string
