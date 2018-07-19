@@ -9,7 +9,7 @@ base = 'https://api.trello.com/1/'
 org_name = 'ptdotindonesia1'
 base = base + 'organizations/' + org_name + '/boards'
 
-hs = open("curlorgboard.txt", "w")
+hs = open("curl_create_webhook.txt", "w")
 
 params_key_and_token.update({'fields': 'id,name'})
 response = requests.request("GET", base, params=params_key_and_token)
