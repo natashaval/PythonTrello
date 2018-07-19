@@ -5,7 +5,7 @@ token = '6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9'
 
 # retrieve webhooks created within token
 curl = 'curl https://api.trello.com/1/tokens/'+ token + '/webhooks?key=' + key
-print (curl)
+#print (curl)
 
 curl_token = subprocess.getstatusoutput(curl)
 curl_token1 = ''.join(str(curl_token))
@@ -20,7 +20,7 @@ data_split = data.split("},{")
 for board in data_split:
     bid = board[board.find('id":"'):board.find('","')]
     bid = bid[5:]
-    print (bid)
+    #print (bid)
     webhook_id.append(bid)
 
 #print (webhook_id)
