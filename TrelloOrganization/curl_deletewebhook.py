@@ -1,7 +1,7 @@
 import subprocess
 
-key = '19e1e8779951830e0d86122f201454c6'
-token = '6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9'
+key = input('Input your Trello key API? ')
+token = input('Input your token? ')
 
 # retrieve webhooks created within token
 curl = 'curl https://api.trello.com/1/tokens/'+ token + '/webhooks?key=' + key
@@ -10,7 +10,6 @@ curl = 'curl https://api.trello.com/1/tokens/'+ token + '/webhooks?key=' + key
 curl_token = subprocess.getstatusoutput(curl)
 curl_token1 = ''.join(str(curl_token))
 
-#print (curl_token1)
 data = curl_token1[curl_token1.find("[")+1:curl_token1.find("]")]
 #print (data)
 
@@ -30,3 +29,6 @@ for i in range(len(webhook_id)):
     curl = 'curl -X "DELETE" https://api.trello.com/1/tokens/'+ token + '/webhooks/'+ webhook_id[i] +'?key=' + key
     #print (curl)
     curl_delete = subprocess.getstatusoutput(curl)
+    print ('is removing webhook')
+
+print ('Success in removing all webhooks within token')

@@ -29,7 +29,9 @@ for board in org_array:
                              'labels': 'all', 'lists': 'all', 'actions': 'all'})
     response = requests.request("GET", board_url, params=params_key_and_token)
     board_array = response.json()
+    board_array['counter'] = 0
     board_save = coll.update({'_id': board['id']}, {'$set': board_array}, upsert=True)
     print ('Board', board['name'], 'saved successfully')
+    
 
 client.close()
