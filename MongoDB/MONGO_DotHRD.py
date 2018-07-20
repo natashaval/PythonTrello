@@ -4,7 +4,7 @@ from pymongo import MongoClient
 client = MongoClient()
 
 db = client['Trello']
-coll = db['DOT-TalentPool']
+coll = db['DOT-Indonesia']
 
 import requests
 import json
@@ -21,10 +21,12 @@ print ('Search for board id by `id`')
 
 board_id = input("Insert board id here: ")
 board_url = base + 'boards/' + board_id
+params_key_and_token.update({'cards': 'all', 'customFields': 'true', 'card_customFieldItems': 'true',
+                             'labels': 'all', 'lists': 'all', 'actions': 'all'})
 response = requests.request("GET", board_url, params=params_key_and_token)
 board_array = response.json()
 #print (response.text)
-
+#board_save = coll.update({'_id': board_id}, {'$set': board_array}, upsert=True)
 
 # 2. List yang ada dalam board tertentu
 list_url = base + 'boards/' + board_id + '/lists'
