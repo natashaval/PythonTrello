@@ -1,17 +1,21 @@
 import pprint
 from pymongo import MongoClient
-client = MongoClient()
+import config
+host = config.Database_config['host']
+client = MongoClient(host=host)
 
-db = client['Trello']
-coll = db['DOT-Indonesia']
+db_name = config.Database_config['database_name']
+coll_name = config.Database_config['collection_name']
+db = client[db_name]
+coll = db[coll_name]
 
 import requests
 import json
 import sys
 from trello import TrelloApi
 
-key = '19e1e8779951830e0d86122f201454c6'
-token = '6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9'
+key = config.Trello_config['api_key']
+token = config.Trello_config['token']
 params_key_and_token = {'key':key, 'token':token}
 base = 'https://api.trello.com/1/'
 

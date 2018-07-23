@@ -3,18 +3,14 @@
 import requests
 import json
 import config
-#key = '19e1e8779951830e0d86122f201454c6'
-#token = '6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9'
-#key = input ('Input your Trello API key: ')
-#token = input ('Input your token to associate with these webhooks: ')
-#callbackurl = input('Input URL as the endpoint for webhooks: ')
+
 key = config.Trello_config['api_key']
 token = config.Trello_config['token']
 callbackurl = config.Webhook['hook_url']
 params_key_and_token = {'key':key, 'token':token}
 base = 'https://api.trello.com/1/'
 
-org_name = 'ptdotindonesia1'
+org_name = config.Trello_config['organization_name']
 base = base + 'organizations/' + org_name + '/boards'
 
 hs = open("curl_create_webhook.txt", "w")

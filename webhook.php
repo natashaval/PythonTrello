@@ -6,7 +6,7 @@
 
 if (!empty($events)){
 	// get counter saat ini dari mongoDB
-	$cmd_counter = "python script/Mongo_GetCounter.py $board_id";
+	$cmd_counter = "python Mongo_GetCounter.py $board_id";
 	$string_counter = shell_exec($cmd_counter);
 	
 	$counter = (int)$string_counter;
@@ -17,7 +17,7 @@ if (!empty($events)){
 
 	++$counter;
 //	if ($counter >= 5){
-		$cmd_update_board = "python script/Mongo_ScaleOrganization.py $board_id $counter";
+		$cmd_update_board = "python Mongo_ScaleOrganization.py $board_id $counter";
 		$output = shell_exec($cmd_update_board);
 		var_dump($output);
 //	}
