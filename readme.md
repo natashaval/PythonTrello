@@ -17,12 +17,12 @@ Requirement of Scaling Organization Trello Boards:
 3. Run MongoDB as readme.md in [the front](github.com/natashaval/PythonTrello#5-juli-2018)
 4. Open terminal and run `python trello_board_first.py` to insert organization boards for the first time in 
 MongoDB
-5. Copy `webhook.php and folder script` into C:/xampp/htdocs/[new folder]
+5. Copy `webhook.php, config.py, Mongo_GetCounter.py, Mongo_ScaleOrganization.py` into C:/xampp/htdocs/[new folder]
 6. Run -Generate Webhook- and fill callbackURL as http://___.ngrok.io/[new folder]/webhook.php
 
-# Update Board using Cron (when counter < 10)
+# Update Board using Cron (when counter < 10) every 10 minutes
 1. Open terminal
-2. Run `python script/Mongo_CronBoard.py` to update every ___ [time] when counter is < 10
+2. Run `python Mongo_CronBoard.py` to update every ___ [time] when counter is < 10
 
 
 
