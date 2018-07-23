@@ -16,7 +16,7 @@ params_key_and_token = {'key':key, 'token':token}
 base = 'https://api.trello.com/1/'
 
 trello_boards = coll.find({})
-for board in trello_boards[:5]:
+for board in trello_boards:
     counter = int(board['counter'])
     board_id = board['id']
     # force run to pull board when counter is less than 10
@@ -27,7 +27,7 @@ for board in trello_boards[:5]:
         param_get_board = {}
         param_get_board.update(params_key_and_token.copy())
         param_get_board.update(board_stats.copy())
-        print (param_get_board)
+        print (param_get_board, board['name'])
         response = requests.request("GET", board_url, params=param_get_board)
         board_array = response.json()
 
