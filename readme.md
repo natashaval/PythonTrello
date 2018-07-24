@@ -24,6 +24,31 @@ MongoDB
 1. Open terminal
 2. Run `python Mongo_CronBoard.py` to update every ___ [time] when counter is < 10
 
+#  Melalui GUI RoboMongo:
+1. masuk ke RoboMongo
+2. Add new Connection >> SSH
+3. ssh address : trello.dot.co.id
 
+ssh port : 22
+ssh user : trello
+
+private key : yang tadi digenerate (pakai yang ...) pilih (id_rsa) tanpa pub
+4. Test and Connect
+
+# Melalui Terminal:
+1. Masuk ke Git Bash `ssh trello@trello.dot.co.id`
+2. Masuk ke ubuntunya `mongo`
+3. query database (show dbs, show collections)
+
+```
+//cek banyaknya action pada MAGANG DOT
+db.getCollection('DOT-Indonesia').find({'name': 'MAGANG DOT'}).forEach(function(doc) {
+    print(doc.actions.length);
+}
+)
+
+//cek counter saat ini
+db.getCollection('DOT-Indonesia').find({'name': 'MAGANG DOT'}, {counter: 1})
+```
 
 ## Webhook -> PHP -> Python -> MongoDB

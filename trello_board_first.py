@@ -38,4 +38,12 @@ for board in org_array:
     print ('Board', board['name'], 'saved successfully')
     
 
+board_id = '5a5c4f8f846918a84a3a4f85' #for DOT Talent Pool
+board_url = base + 'boards/' + board_id
+
+response = requests.request("GET", board_url, params=params_key_and_token)
+board_array = response.json()
+board_save = coll.update({'_id': board_id}, {'$set': board_array}, upsert=True)
+print ('Board', board_array['name'], 'saved successfully')
+
 client.close()
