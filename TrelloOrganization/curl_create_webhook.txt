@@ -1,0 +1,154 @@
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Analysis & Prototype Design","idModel":"58c80aefad3e41595d6b3794","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Ardee","idModel":"578f62b6c4f2272ef4b38ec1","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"BEM","idModel":"57be596077949807d44b526c","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"BIYAN [Wordpress]","idModel":"5a385df04639f9274b17f6ad","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"BPPTL App","idModel":"59e064ae2c8decaf8d222005","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"BPPTL RE-Design","idModel":"5a8567b4215912576b93c149","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"BerUang","idModel":"57844faf9f0284786f5576e4","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Beruang App","idModel":"5758f6f01135672500f6a26b","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Bisnis Kokoh-Reborn","idModel":"5937af56d4d3685e1827667e","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"DDMS","idModel":"573a74e02092686f24f15652","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"DONE #S6","idModel":"595a0d409e766fa0111e14ae","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"DOT DevOps","idModel":"5a4c38e9550bcc87f6aefe18","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"DOT Development Automation","idModel":"59101b9da3a18d682ef32618","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"DOT Discuss","idModel":"5ac59ed40c567d898da5245f","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"DOT Intern app","idModel":"5b458f4d2f77719777eef887","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"DOT Portal Partner","idModel":"58bd0b7b3ece674be24649d0","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"DOT Resolution 2018","idModel":"5a4af4f226d1dcef3f9afeed","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"DOT Sistem Pengajuan - Sprint Backlog","idModel":"58d21fd5aeab01de75f891b1","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"DOT Socmed","idModel":"5a609d545c1b0d0854c6b282","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"DOT Training","idModel":"59d1e5257de0ba8b942cfca7","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"DOT WFMS","idModel":"5b4ead4f00b957d1b9f578b9","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"DOT's Proker","idModel":"5a77fac055335efcea3f4b82","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"DOT's R&D","idModel":"5a305f290e6212a225283014","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"DPR","idModel":"5a03fa9ef578f03a795bcb48","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"DPR-PPID","idModel":"5b16007ac319979629dddd8f","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Design","idModel":"566f62e848eb04059682683b","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Design","idModel":"5b51a75ac7f188314e40cfda","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"E-GRATIFIKASI PKT","idModel":"58632dc066fdd8498020ea83","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"E-Service","idModel":"5aa950764727fd6b93fd76f4","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"E-Ticketing Dishub","idModel":"59daf565655dad7f72047e8d","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"EGG","idModel":"591d5e2c9434e95ab5e21907","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"HOP by MPM","idModel":"5769f03c8f0d5f182cb453be","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Halosis","idModel":"5a828ca5f671571a9ae7de83","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Healthy First","idModel":"5a542442c2da0cbe549e5502","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Instasave","idModel":"56dfac827506e4cd2cc0b964","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Internal DOT System (IDS)","idModel":"580d774ece4e7a3f6dc0cd9f","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"JagoBangunan","idModel":"586b05d78f7489b91b4778e9","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"KPI-Pupuk Kaltim","idModel":"593df1e0e73555478a99cc31","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Kantor Malang","idModel":"59ad0178fc5af0274417eee8","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Kemenlu","idModel":"5799cf12d7d347f466b8ff6d","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"MAGANG DOT","idModel":"5981450c0f8bc86cf09ef339","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Mandiri Lentera","idModel":"56ca45cb7e52c9a65a0affb6","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Mazda Owner Club Platforms","idModel":"5a386a5b07409f4720951be1","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Mitra TONASA","idModel":"5948834348a7f788fdb34ad1","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"NPCT Website","idModel":"5756679dba8827f46d3a8e83","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"NPCT1 Devops","idModel":"5a962b9d4ed8a0a500717757","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"OnFluencer Web","idModel":"56946976968326158584fb61","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"PU-Monitoring","idModel":"57a7e31daeb2eaa884a43f6a","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Parenthink","idModel":"56fdfc582b581c146a739123","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Pop's - People Order People Send","idModel":"567a461d1af555bf6e2f6daf","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Prakerin SMK PGRI3 Malang 16/17 - Product Backlog","idModel":"58d220b80d0de03b98be2b01","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Project Control App","idModel":"5a39e1338fbdf9a47a9fced2","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Project Management Tools","idModel":"565d075b73c0811211558bd9","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"QA Engineer Training","idModel":"5a5776b35e2a786f9da4bdf0","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Raja Pindah Web & API [Sprint 2]","idModel":"565fe5020f9fe160da7e344b","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Redesign DOT Web","idModel":"5662ff23754047067c26e07a","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Refre","idModel":"57ea0a7835a0dc0bac6262ac","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"SISI Point Kita","idModel":"57b51412e67fbf98fa3374bd","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"SMI","idModel":"595efe3098748e3648674f1f","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"SMI-DOT Monitoring","idModel":"5ae9295beaabeee936dd641b","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"SmansaWeb","idModel":"56b17b503e1537002294f750","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Sompo","idModel":"56e8e082a52a5c65e24fcbc6","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Sompo Maintenance Service","idModel":"5ad086e22c4cdc532c010414","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Sompo Mazda","idModel":"5a82a62ac553bd1d472c7f41","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Sompo Microsite Banking","idModel":"5aba08b54203d165d141f324","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Sprint Planning","idModel":"566a7be8eb3c99a9a682ca19","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Talian Web","idModel":"57abef70a7ffd84f93270345","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"TapRose","idModel":"58856f9623a5e1d954542dd2","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"TapRose Support","idModel":"5a9e032235b4c18fa6bccb4a","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Team Impediment","idModel":"5ad4494e23a59382ee6eeddd","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Web DOT","idModel":"5ab22273c4fe2924f4b05e5d","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Web ITS","idModel":"5964223bd1a253e7ac034f40","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"WebApp EGG","idModel":"59f99a59ce690c24b4bdf675","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"Workflow Issues","idModel":"567a462c85de3b9a327382d9","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"[DEV] DPR - RI","idModel":"57871e82ff42d0c5bbe1b6b8","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"[DEV] Raja Pindah","idModel":"565fed23475b15bcb0192e56","active":true}' 
+
+curl https://trello.com/1/tokens/6fec5904bd2db30d876191d45f68bbec0db6322e36ebaa2ad80c2bcd7948d5f9/webhooks/?key=19e1e8779951830e0d86122f201454c6 -H "Content-Type: application/json" -d '{"callbackURL":"http://bc267cb3.ngrok.io/trelloorg/webhook.php","description":"[Marketing] Prospect","idModel":"566e5e6a866735090934e5be","active":true}' 
+
