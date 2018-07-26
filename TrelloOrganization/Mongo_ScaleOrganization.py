@@ -32,9 +32,8 @@ if counter >= 10:
         board_id = sys.argv[1]
         
         board_url = base + 'boards/' + board_id
-        board_stats = {'fields':'all','cards': 'all', 'customFields': 'true', 'card_customFieldItems': 'true',
-                             'labels': 'all', 'lists': 'all', 'members': 'all',
-                             'checklists': 'all', 'memberships': 'all', 'pluginData': 'true', 'boardPlugins':'true'}
+        board_stats = {'cards': 'all', 'customFields': 'true', 'card_customFieldItems': 'true',
+                                     'labels': 'all', 'lists': 'all'}
         param_get_board = {}
         param_get_board.update(params_key_and_token.copy())
         param_get_board.update(board_stats.copy())
