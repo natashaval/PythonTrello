@@ -12,14 +12,14 @@ coll = db[coll_name]
 query_member_doing = {}
 
 boards_array = coll.find({})
-for board in boards_array[40:41]:
+for board in boards_array:
     members_dict = {}
     for members in board['members']:
         members_dict.update({members['id']:members['fullName']})
     lists_dict = {}
     for lists in board['lists']:
         lists_dict.update({lists['id']:lists['name']})
-    print(members_dict)
+    #print(members_dict)
 
     
     print(board['name'], 'jumlah cards: ',len(board['cards']))
