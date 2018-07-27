@@ -27,10 +27,12 @@ param_org.update(fields.copy())
 response = requests.request("GET", org_url, params=param_org)
 org_array = response.json()
 
+params_key_and_token.update({'fields':'all','cards': 'all', 'customFields': 'true', 'card_customFieldItems': 'true',
+                             'labels': 'all', 'lists': 'all', 'actions': 'all', 'members': 'all',
+                             'checklists': 'all', 'memberships': 'all', 'pluginData': 'true', 'boardPlugins':'true'})
+
 for board in org_array:
     board_url = base + 'boards/' + board['id']
-    params_key_and_token.update({'cards': 'all', 'customFields': 'true', 'card_customFieldItems': 'true',
-                             'labels': 'all', 'lists': 'all', 'actions': 'all'})
     response = requests.request("GET", board_url, params=params_key_and_token)
     board_array = response.json()
     board_array['counter'] = 0
@@ -43,6 +45,10 @@ board_url = base + 'boards/' + board_id
 
 response = requests.request("GET", board_url, params=params_key_and_token)
 board_array = response.json()
+<<<<<<< Updated upstream:trello_board_first.py
+=======
+board_array['counter'] = 0
+>>>>>>> Stashed changes:TrelloOrganization/trello_board_first.py
 board_save = coll.update({'_id': board_id}, {'$set': board_array}, upsert=True)
 print ('Board', board_array['name'], 'saved successfully')
 
